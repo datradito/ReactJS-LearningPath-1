@@ -11,6 +11,7 @@ export default function Counter() {
     return (
         <>
             <section>
+                <h1>Trabajo de la sección 4</h1>
                 <h2>Contador de clicks</h2>
                 <div>
                     <p>Usted ha clickeado el botón: {click} veces</p>

@@ -1,15 +1,19 @@
-import {Header} from './components/header';
+import PageRoutes from './routes/routes'
+import Navbar from './components/navbar';
+import { BrowserRouter as Router } from "react-router-dom";
 import Counter from './components/counterApp';
 import './App.css'
 
 function App() {
 
   return (
-    <>
-      <Header title={'Título proporcionado a través de props'} ></Header>
-      <main className='flex_column_center'>
-        <Counter></Counter>
-      </main>
+    <>   
+      <Router>
+          <Navbar></Navbar>
+          <main className='flex_column_center'>
+            <PageRoutes />
+          </main>
+      </Router>
     </>
   )
 }
