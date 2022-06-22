@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+span{
+  color: rgb(25, 109, 74);
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
