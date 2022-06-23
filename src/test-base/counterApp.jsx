@@ -1,14 +1,11 @@
 import React from 'react';
-//import { useState } from "react";
+import { useState } from "react";
 
 export function Counter() {
-    //const [click, setClick] = useState(0);
-    let click = 0;
-    function setClick(i){
-        click = i;
-    }
+    const [click, setClick] = useState(0);
+
     const handleAddClick = () => {
-        setClick(click + 1)
+        setClick(click + 1);
     }
     const handleRestartCounter = () => {
         setClick(0);
