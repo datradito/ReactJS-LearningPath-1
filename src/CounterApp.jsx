@@ -36,7 +36,7 @@ console.log('render');
             }>
                 -1
             </button>
-            <button onClick={ handleAddReset
+            <button aria-label="btn-reset" onClick={ handleAddReset
             }>
                 reset
             </button>

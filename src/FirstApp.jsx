@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const FirstApp = ({
 
     title,
-    subtitle,
+    subTitle,
     name,
     valor
 }) => {
@@ -14,13 +14,14 @@ export const FirstApp = ({
     //console.log(title);
     return (
         <>
-            <h1> {title} </h1>
-            <h2> {subtitle} </h2>
-            <h3>{ valor }</h3>
-            <p>{ name }</p>
+            <h1 data-testid="test-title"> {title} </h1>
+            <p> {subTitle} </p>
+            <p> {subTitle} </p>
+            <p>{valor}</p>
+            <p>{name}</p>
 
-            <button onClick={ function(event) {console.log(event)} }>
-                +1               
+            <button onClick={function (event) { console.log(event) }}>
+                +1
             </button>
 
         </>
@@ -30,14 +31,15 @@ export const FirstApp = ({
 FirstApp.propTypes = {
 
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.number.isRequired,
+    subTitle: PropTypes.string.isRequired,
     valor: PropTypes.number.isRequired
 };
 
 FirstApp.defaultProps = {
 
-    title: 'no hay titulo',
-    subtitle: 'no hay subtitulo',
+    /* cancelado en clase 61 para testing 
+     title: 'no hay titulo',*/
+    subTitle: 'soy un subtitulo',
     name: "begoña",
     valor: 1
 }
