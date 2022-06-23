@@ -7,7 +7,6 @@ function Navbar(){
             <nav>
                 <ul>
                     <li><Link to="/">Inicio</Link></li>
-                    <li><Link to="/Counter">1. Contador</Link></li>
                     <li><Link to="/Gif">2. Gif Browser</Link></li>
                 </ul>
             </nav>
