@@ -1,13 +1,14 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import {Counter} from '../../src/test-base/counterApp';
 /**
- * @jest-environment jsdom 
+ * @jest-environment jsdom
  */
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import { Counter } from '../../src/test-base/counterApp';
 
 describe('Pruebas de counterApp', () => {
     test('Debe hacer match con el snapshot', () => {
-        render( <Counter />);
+        const { container } = render( <Counter/> );
+        expect( container ).toMatchSnapshot( );
     });
 
     test('Click debe tener un valor de 0 al iniciar la app', () => {
@@ -15,9 +16,9 @@ describe('Pruebas de counterApp', () => {
         const clickFirstValue = 0;
 
         //Estímulo
-        let click = render( <Counter />).querSelector('span').innerHTML;
-        console.log(click);
+        render( <Counter/> );
+        
         //Obervar comportamiento
-        expect( click ).toBe( clickFirstValue );
+        expect( screen.getByText(clickFirstValue) ).toBeTruthy( );
     });
 })
