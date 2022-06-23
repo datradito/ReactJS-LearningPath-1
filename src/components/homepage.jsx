@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types'; //para limitar el tipo de props que pueden recibirse
 
-export const Header = ({title, subtitle}) => {
+export const Homepage = ({title, subtitle}) => {
 
   return (
     <>
@@ -13,10 +13,10 @@ export const Header = ({title, subtitle}) => {
     </>
   )
 }
-Header.propTypes = {
+Homepage.propTypes = {
     title: PropTypes.string,
 }
-Header.defaultProps = {
+Homepage.defaultProps = {
     title: 'Default subtitle: Defina un título',
     subtitle: 'Default subtitle: Defina un subtítulo',
 }
