@@ -5,7 +5,7 @@ import './styles.css';
 
 // creo la funcion para poder despues renderizarla.
 //import FirstApp from './FirstApptest';
-//import { FirstApp } from './FirstApp'; // una funcion la importo con llaves.
+import { FirstApp } from './FirstApp'; // una funcion la importo con llaves.
 import { CounterApp } from './CounterApp';
 
 ReactDOM.createRoot(document.getElementById('root') ).render(
@@ -14,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root') ).render(
     //al renderizar dentro la funcion utilizo en un solo llamado < />,
     //es el padre de mi first App-
     <React.StrictMode> 
-      <CounterApp value={ 0 }/>
+     <CounterApp value={ 0 }/>
+     {/*<FirstApp title='hola soy Daiana' />*/}
     </React.StrictMode>
 );

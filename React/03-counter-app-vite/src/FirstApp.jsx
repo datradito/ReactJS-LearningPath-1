@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 // las importo para definirle el tipo a las properties, previamente descargo la dependencia (npm install prop-types);
 
-export const FirstApp = ({ title, subtitle, name  }) => {
+export const FirstApp = ({ title, subTitle, name  }) => {
     //console.log(title);
     //trabajamos con el condicional, 
    {/* if (!title) {
@@ -9,9 +9,10 @@ export const FirstApp = ({ title, subtitle, name  }) => {
     } */}
   return (
     <>
-    <h1>{ title }</h1>
-    <h2>{name}</h2>
-    <p>{subtitle }</p>
+    <h1 data-testid="test-title">{ title }</h1>
+    <p>{ subTitle }</p>
+    <p>{ subTitle }</p>
+    <h2>{ name }</h2>
     </>
   )
 }
@@ -29,5 +30,5 @@ subtitle: PropTypes.number.isRequired
 FirstApp.defaultProps = {
     name:'daiana herrera',
     subtitle: 'no hay sub titulo',
-    title: 'no hay titulo',
+    // en seccion5 title: 'no hay titulo',
 }
