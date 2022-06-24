@@ -32,7 +32,7 @@ export const FirstApp = ({title , subtitle }) => {
                     </nav>
 
                 </div>
-                <div className="title">
+                <div className="title" data-testid="test-title">
                     <h1>{title}</h1>
                     
                 </div>

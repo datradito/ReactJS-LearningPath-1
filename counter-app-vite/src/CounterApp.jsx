@@ -13,9 +13,9 @@ export const CounterApp = ({value}) => {
        
         setCounter(counter + 1 )
 
-        if(counter > 10) {
+       /*  if(counter > 10) {
             alert('Legaste a 10!')
-        }
+        } */
     
     }
     const  handleLess = () =>  {
@@ -33,9 +33,9 @@ export const CounterApp = ({value}) => {
 
                 <h2>{counter}</h2>
 
-                <button onClick={ handleAdd}>+</button>
-                <button onClick={ handleLess}>-</button>
-                <button onClick={ handleReset}>Reset</button>
+                <button  aria-label="btn-suma" onClick={ handleAdd}>+</button>
+                <button aria-label="btn-resta" onClick={ handleLess}>-</button>
+                <button aria-label="btn-reset" onClick={ handleReset}>Reset</button>
             </div>
         </Fragment>
     )
