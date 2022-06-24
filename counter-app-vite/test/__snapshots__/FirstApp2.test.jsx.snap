@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prubeas en <FirstApp/> debe hacer match con la captura  1`] = `
+<div>
+  <header
+    class="haeder"
+  >
+    <div
+      class="container-nav"
+    >
+      <nav
+        class="nav"
+      >
+        <ul
+          class="nav-list"
+        >
+          <li
+            class="nav-list-item"
+          >
+            Home
+          </li>
+          <li
+            class="nav-list-item"
+          >
+            About me
+          </li>
+          <li
+            class="nav-list-item"
+          >
+            Projects
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div
+      class="title"
+      data-testid="test-title"
+    >
+      <h1>
+        Hola, soy Paloma
+      </h1>
+    </div>
+    <p>
+      Mi primera app react
+    </p>
+  </header>
+</div>
+`;
