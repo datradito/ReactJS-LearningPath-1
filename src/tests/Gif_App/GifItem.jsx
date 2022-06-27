@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function GifItem({ gif }) {
@@ -9,7 +10,7 @@ export default function GifItem({ gif }) {
             </div>
         </>
     )
-}
+};
 GifItem.propTypes = {
     gif: PropTypes.object.isRequired
-}
+};
