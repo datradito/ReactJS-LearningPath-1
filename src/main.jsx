@@ -1,20 +1,14 @@
 import React from 'react';
-import  ReactDOM  from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
+import {GifExpertApp} from './GifExpertApp';
 
-import { CounterApp } from './CounterApp';
-import{FirstApp} from './FirstApp'; 
+import './styles.css';
 
 
-import './index.css';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-
-    <React.StrictMode>
-
-        <CounterApp valor={10} />
-
-      {/* <FirstApp title='hola, soy Begoña'/>*/}
-       
-    </React.StrictMode>
+  <React.StrictMode> 
+    <GifExpertApp />
+  </React.StrictMode>
 );
