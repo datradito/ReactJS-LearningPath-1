@@ -1,7 +1,8 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+//import './App.css';
 
-const App = ({ value }) => {
+export const CounterApp = ({ value }) => {
   const [counter, setCounter] = useState(value)
   
   return (
@@ -15,6 +16,8 @@ const App = ({ value }) => {
     </div>
   )
 }
-export default App;
 
 
+CounterApp.propTypes = {
+  value: PropTypes.number.isRequired
+}
