@@ -1,3 +1,3 @@
 Accenture Learning Path for FS/FE Tribe
 
-unidad 5, lo realice en vite siguiendo el orden del curso y lo ejecute en npm. localhost3000
+main, solo tiene git y readme , unidad 5 es un branch y unidad 6 para adelante es otro
