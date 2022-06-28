@@ -6,4 +6,4 @@ React application made with Vite.
 Checkout the project in: [Netlify](https://gifbrowser.netlify.app/)
 
 
-After installing the project you can start the server by running **npm run dev** in the terminal.
+To use this repo locally you must create an account in https://developers.giphy.com/, copy your API KEY and paste it inside the quotes in .env.template

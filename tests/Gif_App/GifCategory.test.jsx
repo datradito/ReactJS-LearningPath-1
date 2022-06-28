@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import GifCategory  from '../../src/tests/Gif_App/GifCategory';
 import useFetchGifs from '../../src/hooks/useFetchGifs_testing';
 

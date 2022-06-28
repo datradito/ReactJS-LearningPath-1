@@ -5,7 +5,6 @@ describe('Pruebas del hook useFetchGifs', () => {
     test('Debe regresar el estado inicial', () => {
         const {result} = renderHook(() => useFetchGifs('Naruto'));
         const {foundGifs, isLoading } = result.current;
-        console.log( foundGifs );
         expect( foundGifs.length ).toBe(0);
         expect( isLoading ).toBeTruthy();
     });

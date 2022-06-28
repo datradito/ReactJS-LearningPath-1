@@ -31,7 +31,7 @@ export default function GifApp() {
                 <AddCategory handleNewCategory={handleCategoryAdd}></AddCategory>
                 
                 {categories.map((category) => {
-                    return <GifCategory category={category} />
+                    return <GifCategory category={category} key={category} />
                 })
                 }
                 
