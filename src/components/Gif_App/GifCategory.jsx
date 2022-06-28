@@ -1,5 +1,6 @@
 import useFetchGifs from '../../hooks/useFetchGifs';
 import GifItem from './GifItem';
+import PropTypes from 'prop-types';
 
 export default function GifCategory({ category }) {
     const { foundGifs, isLoading } = useFetchGifs( category );
@@ -17,3 +18,7 @@ export default function GifCategory({ category }) {
         </div>
     )
 }
+
+GifCategory.propTypes = {
+    category: PropTypes.string.isRequired
+};

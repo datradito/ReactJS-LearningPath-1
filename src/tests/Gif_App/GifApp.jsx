@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/gifApp.css';
+//import '../../styles/gifApp.css';
 import { useState } from 'react';
 
 import AddCategory from './AddCategory';
@@ -32,7 +32,7 @@ export default function GifApp() {
                 <AddCategory handleNewCategory={handleCategoryAdd}></AddCategory>
                 
                 {categories.map((category) => {
-                    return <GifCategory category={category} />
+                    return <GifCategory category={category} key={category}/>
                 })
                 }
                 

@@ -1,4 +1,6 @@
+import React from 'react';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export default function AddCategory({handleNewCategory}) {
     const [inputCategory, setInputCategory] = useState('');
@@ -15,8 +17,11 @@ export default function AddCategory({handleNewCategory}) {
         setInputCategory('');
     }
     return (
-        <form onSubmit={(e) => {handleSubmit(e)}}>
+        <form onSubmit={(e) => {handleSubmit(e)}} aria-label="form">
             <input onChange={handleInput} value={inputCategory} placeholder="Buscar gifs" type="text" name="searchBar" id="searchBar" />
         </form>
     )
 }
+AddCategory.propTypes = {
+    handleNewCategory: PropTypes.func.isRequired
+};
