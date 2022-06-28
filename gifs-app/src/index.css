@@ -1,0 +1,58 @@
+body{
+  background: none;
+  border: none;
+  padding: 2em;
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  justify-content: center;
+  
+}
+::placeholder { 
+  color: rgb(244, 215, 255);
+}
+input{
+  text-align: left;
+  padding-right: 10px;
+  outline: none;
+}
+input:hover, input:active{
+  border: inherit;
+  outline: none;
+}
+button, input{
+  background: none;
+  border: 0;
+  color: inherit;
+  background-color: rgb(119, 27, 204);
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  padding: 1em;
+}
+button{
+  cursor: pointer;
+}
+ol{
+  list-style:decimal;
+  text-align: justify;
+}
+.search{
+  display: inline-block;
+  width: 100%;
+  /*background-color: rgb(79, 26, 114);*/
+}
+.GifGridItem{
+  align-content: center;
+  margin: 0.6em;
+  border: 0.2em solid rgb(132, 0, 255);
+}
+.GifGridItem p {
+  text-align: center;
+}
+.card-grid{
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
