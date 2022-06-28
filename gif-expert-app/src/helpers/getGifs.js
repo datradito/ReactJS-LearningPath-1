@@ -1,5 +1,5 @@
-export const getGifs = async( category ) =>{
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=Au9GbD9D58c1xLCmhPHDnHrXmmJ5tQUq&q=valorant&limit=10`
+export const getGifs = async( category ) =>{//cambiar q= ${ category }
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=Au9GbD9D58c1xLCmhPHDnHrXmmJ5tQUq&q=${ category }&limit=10`
     const resp = await fetch ( url );
     //restructuro la data
     const { data } = await resp.json();
@@ -10,7 +10,7 @@ export const getGifs = async( category ) =>{
      title: img.title,
      url: img.images.downsized_medium.url
      }));
-     console.log(gifs);
+    
      return gifs;
 
     }
