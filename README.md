@@ -21,6 +21,10 @@ en terminal escribir:
 http-server -o [De esta forma abre el archivo, se levanta en el localhost 8080]
 
 link de pagina terminada --> https://daiu-gif-expert-app.netlify.app/
+---testing---
+Intalar:
 
+ npm install --include=dev jest babel-jest @babel/preset-env @babel/preset-react  
 
+ npm install --include=dev  @testing-library/react @types/jest jest-environment-jsdom  
 
