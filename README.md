@@ -10,7 +10,7 @@ localhost3000
 
 github pages:
 
-https://begomib.github.io/react-desde-unidad6/
+https://begomib.github.io/ReactJS-LearningPath-1/
 
 
 netlify:
