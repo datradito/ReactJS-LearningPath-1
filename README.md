@@ -2,6 +2,8 @@
 Accenture Learning Path for FS/FE Tribe
 
 # Para Ejecutar el proyecto gif-expert-app
-cd gif-expert-app
-npm install
-npm run dev
+ * cd gif-expert-app
+ * npm install
+ * npm run dev
+
+Link https://gif-expert-paloma-herrera.netlify.app/
