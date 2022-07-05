@@ -15,7 +15,7 @@ npm run dev
 ctrl+c = salir
 ---build---
 npm run build
-# Se crean los directorios para deplegar en el hosting
+# Se crean los directorios para desplegar en el hosting
 carpeta dist
 en terminal escribir:
 http-server -o [De esta forma abre el archivo, se levanta en el localhost 8080]
