@@ -3,7 +3,7 @@
 _Accenture Learning Path for FS/FE Tribe_
 
 GifApp-GitPages : https://nicoramos95.github.io/ReactJS-LearningPath-1/
-GifApp-Netlify  : https://gilded-sorbet-c467b3.netlify.app
+GifApp-Netlify  : https://iridescent-sorbet-86fedd.netlify.app
 
 ## Comenzando 🚀
 
